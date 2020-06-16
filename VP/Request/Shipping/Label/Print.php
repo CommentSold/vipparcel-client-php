@@ -41,6 +41,7 @@ class VP_Request_Shipping_Label_Print extends VP_Abstract_Request
             'customsInfo',
             'customsItem',
             'labelType',
+            'validationAddress',
         );
 
         $domestic = array(
@@ -54,6 +55,7 @@ class VP_Request_Shipping_Label_Print extends VP_Abstract_Request
             'insuredValue',
             'dimensionalWeight',
             'labelType',
+            'validationAddress',
         );
 
         return ($this->is_international() ? $international : $domestic);
