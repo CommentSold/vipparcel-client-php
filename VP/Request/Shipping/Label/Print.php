@@ -55,6 +55,8 @@ class VP_Request_Shipping_Label_Print extends VP_Abstract_Request
             'insuredValue',
             'dimensionalWeight',
             'labelType',
+            'customsInfo', // for orders to US territories
+            'customsItem', // for orders to US territories
             'validationAddress',
         );
 
