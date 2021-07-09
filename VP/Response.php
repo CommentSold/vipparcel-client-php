@@ -1,10 +1,12 @@
 <?php
 
+use Psr\Http\Message\ResponseInterface;
+
 class VP_Response {
 
     protected $_response;
 
-    public function __construct(\Guzzle\Http\Message\Response $response)
+    public function __construct(ResponseInterface $response)
     {
         $this->_response = $response;
     }
@@ -32,11 +34,11 @@ class VP_Response {
 
     public function as_array()
     {
-        return json_decode($this->response_client()->getBody(TRUE), TRUE);
+        return json_decode((string)$this->response_client()->getBody(), true);
     }
 
     public function as_object()
     {
-        return json_decode($this->response_client()->getBody(TRUE), FALSE);
+        return json_decode((string)$this->response_client()->getBody(), false);
     }
 }
