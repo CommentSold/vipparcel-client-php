@@ -2,8 +2,7 @@ VIPparcel APIs Client Library for PHP
 ====================
 
 ## Requirements ##
-* [PHP 5.3.3 or higher](http://www.php.net/)
-* [PHP cURL extension] (http://php.net/manual/en/book.curl.php)
+* [PHP 7.2.5 or higher](http://www.php.net/)
 * [PHP JSON extension](http://php.net/manual/en/book.json.php)
 * [Composer] (https://github.com/composer/composer)
 
